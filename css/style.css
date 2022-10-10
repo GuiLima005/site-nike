@@ -14,7 +14,7 @@ body{
         "header"
         "main"
         "footer" ;
-    grid-template-rows: auto 1fr 100px;
+    grid-template-rows: auto 1fr 162px;
     background: linear-gradient(174.44deg, rgba(11, 11, 11, 0.95) -0.36%, rgba(13, 13, 13, 0.855) 104.09%);
     background-blend-mode: darken;
     color: white;
@@ -41,7 +41,7 @@ header{
     display: flex;
     justify-content: center;
     font-size: 1.5rem;
-    gap: 44px;
+    gap: 66px;
 }
 .icon{
     grid-area: icon;
@@ -70,7 +70,7 @@ header{
     font-size: 1.5rem;
 }
 .sub-titulo{
-    font-size: 5rem;
+    font-size: 4rem;
     letter-spacing: 0.5em;
 }
 .descricao{
@@ -88,6 +88,7 @@ header{
     font-size: 1.3rem;
 }
 footer{
+    display: grid;
     grid-area: footer;
 }
 .letras{
@@ -95,4 +96,8 @@ footer{
     display: flex;
     gap: 33px;
     padding: 0 58px;
+}
+.nike{
+    place-self: center;
+        
 }
