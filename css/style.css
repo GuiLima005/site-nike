@@ -9,8 +9,7 @@ a{
 }
 :root{
     --primary-color: black; /*linear-gradient(174.44deg, rgba(11, 11, 11, 0.95) -0.36%, rgba(13, 13, 13, 0.855) 104.09%)*/
-    --secondary-color: white;
-    --space-default: 70px;
+    --secondary-color: #ffff;
 }
 body{
     height: 100vh;
@@ -28,9 +27,9 @@ header{
         "logo menu icon";
     grid-template-columns: auto 1fr auto;
     display: grid;
-    padding: 0px 44px;
-    
-}main{
+    padding: 0px 44px;    
+}
+main{
     grid-area: main;
     grid-template-areas: 
         "imagem texto";
@@ -45,11 +44,21 @@ header{
     justify-content: center;
     font-size: 1.5rem;
     gap: 66px;
+    font-family: 'Inter';
+    font-weight: 400;
 }
 .icon{
     grid-area: icon;
     place-self: center;
-    
+}
+.icone{
+    justify-content: center;
+    place-self: center;
+    background: black;
+    border-radius: 50%;
+    height: 60px;
+    width: 55px;
+    padding-top: 5px;
 }
 .circulo{
     grid-area: imagem;
@@ -68,20 +77,25 @@ header{
 }
 .texto{
     padding: 0 300px;
-    display: grid;
+    display: grid; 
 }
 .titulo{
     font-size: 1.5rem;
+    font-family: 'Inter';
+    font-weight: 400;
 }
 .sub-titulo{
     font-size: 4rem;
     letter-spacing: 0.5em;
+    font-family: 'Inter';
+    font-weight: 900;
 }
 .descricao{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    font-family: 'Inter';
+    font-weight: 400;
 }
 .botao{
-    justify-self: flex-start;
     background: #0B0B0B;
     border-radius: 100px;
     width: 250px;
@@ -92,16 +106,24 @@ header{
     font-size: 1.3rem;
 }
 footer{
-    display: grid;
     grid-area: footer;
+    grid-template-areas: 
+        "letras nike";
+    display: grid;
+    grid-template-columns: auto 1fr;
 }
 .letras{
+    grid-area: letras;
+    place-self: center;
     font-size: 1.5rem;
     display: flex;
     gap: 33px;
-    padding: 0 58px;
+    padding-left: 58px;
     color: white;
+    font-family: 'Inter';
+    font-weight: 400;  
 }
 .nike{
-    place-self: center;     
+    grid-area: nike;
+    place-self: center;   
 }
