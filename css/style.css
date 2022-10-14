@@ -5,7 +5,12 @@
 }
 a{
     text-decoration: none;
-    color: white;
+    color: #ffff;
+}
+:root{
+    --primary-color: black; /*linear-gradient(174.44deg, rgba(11, 11, 11, 0.95) -0.36%, rgba(13, 13, 13, 0.855) 104.09%)*/
+    --secondary-color: white;
+    --space-default: 70px;
 }
 body{
     height: 100vh;
@@ -15,9 +20,7 @@ body{
         "main"
         "footer" ;
     grid-template-rows: auto 1fr 162px;
-    background: linear-gradient(174.44deg, rgba(11, 11, 11, 0.95) -0.36%, rgba(13, 13, 13, 0.855) 104.09%);
-    background-blend-mode: darken;
-    color: white;
+    background-image: linear-gradient(to right, var(--primary-color)26.5%, var(--secondary-color)25%);
 }
 header{
     grid-area: header;
@@ -46,6 +49,7 @@ header{
 .icon{
     grid-area: icon;
     place-self: center;
+    
 }
 .circulo{
     grid-area: imagem;
@@ -96,8 +100,8 @@ footer{
     display: flex;
     gap: 33px;
     padding: 0 58px;
+    color: white;
 }
 .nike{
-    place-self: center;
-        
+    place-self: center;     
 }
