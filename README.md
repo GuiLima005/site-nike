@@ -13,7 +13,6 @@ O objetivo deste projeto é colocar em pratica os conhecimentos adquiridos no cu
 ## Tecnologias utilizadas
 - HTML
 - CSS
-- Responsividade
 - Markdown
 
 ---
