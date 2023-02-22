@@ -1,6 +1,6 @@
 # Jordan Brand
 
-![](./img/desktop.png)
+![](./img/DESKTOP.png)
 
 
 [Clique aqui](https://guilima005.github.io/site-nike/) para acessar o site.
